@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "San Francisco de Asís",
+        "tipo": "Santo",
+        "descripcion": "Fundador de la Orden Franciscana, es conocido por su amor a la naturaleza y a los animales. Su vida de pobreza y humildad ha inspirado a millones."
+    },
+    {
+        "nombre": "Arcángel Miguel",
+        "tipo": "Ángel",
+        "descripcion": "Líder de los ejércitos de Dios, es considerado el protector contra el mal y el defensor de la fe."
+    },
+    {
+        "nombre": "Virgen de Guadalupe",
+        "tipo": "Virgen",
+        "descripcion": "Patrona de México y Emperatriz de las Américas. Su aparición en el cerro del Tepeyac es un símbolo de fe y esperanza para el pueblo mexicano."
+    }
+]

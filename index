@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Religioso</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a tu Espacio de Fe</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="santos.html">Santos, Ángeles y Vírgenes</a>
+            <a href="proverbio.html">Proverbio Diario</a>
+            <a href="oraciones.html">Oraciones</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Descubre y Conecta</h2>
+            <p>Este es un lugar para encontrar paz, inspiración y fortaleza en la fe.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tu Sitio Religioso</p>
+    </footer>
+</body>
+</html>
