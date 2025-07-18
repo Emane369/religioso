@@ -7,6 +7,49 @@
     {
         "titulo": "Ave María",
         "oracion": "Dios te salve, María, llena eres de gracia; el Señor es contigo. Bendita Tú eres entre todas las mujeres, y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.",
-        "audio": "audio/ave-maria.mp3"
+        "audio": "audio/ave-maria-es.mp3"
+    }
+    {
+        "titulo": "Angelus",
+        "oracion": "Infunde, Señor, tu gracia en nuestras almas, a fin de que habiendo conocido por la voz del Ángel el Misterio de la Encarnación de tu divino Hijo, podamos, por los méritos de su Pasión y de su cruz, alcanzar la gloria de la Resurrección. Por Cristo, nuestro Señor, Amen.",
+        "audio": "audio/angelus-es.mp3"
+    }
+    {
+        "titulo": "Acto de Contricion",
+        "oracion": "Señor mío Jesucristo, Dios y Hombre verdadero, me pesa de todo corazón haber pecado, porque he merecido el infierno y he perdido el cielo, pero sobre todo porque te ofendí a Ti, que eres bondad infinita, a quien amo sobre todas las cosas. Propongo firmemente, con tu gracia, enmendarme y evitar las ocasiones de pecado, confesarme y cumplir la penitencia. Confío me perdonarás por tu infinita misericordia. Amén.",
+        "audio": "audio/contricion-es.mp3"
+    }
+    {
+        "titulo": "Credo",
+        "oracion": "Creo en un solo Dios, Padre todopoderoso, Creador del cielo y de la tierra, de todo lo visible e invisible. Creo en un solo Señor,Jesucristo, Hijo único de Dios, nacido del Padre antes de todos los siglos: Dios de Dios, Luz de Luz, Dios verdadero de Dios verdadero, engendrado, no creado, de la misma naturaleza del Padre, por quien todo fue hecho; que por nosotros, los hombres, y por nuestra salvación bajó del cielo, y por obra del Espíritu Santo se encarnó de María, la Virgen, y se hizo hombre.
+                   Quien por nosotros fue crucificado en tiempos de Poncio Pilato, padeció y fue sepultado, y resucitó al tercer día, según las Escrituras, y subió al cielo, y está sentado a la derecha del Padre; y de nuevo vendrá con gloria para juzgar a vivos y muertos, y su reino no tendrá fin.
+                   Creo en el Espíritu Santo, Señor y dador de vida, que procede del Padre y del Hijo, que con el Padre y el Hijo recibe una misma adoración y gloria, y que habló por los profetas.
+                   Creo en la Iglesia, que es una, santa, católica y apostólica. Confieso que hay un solo bautismo para el perdón de los pecados. Espero la resurrección de los muertos y la vida del mundo futuro. Amén.",
+        "audio": "audio/credo-es.mp3"
+    }
+    {
+        "titulo": "Espiritu Santo",
+        "oracion": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor. Envía tu Espíritu y todo será creado. Y renovarás la faz de la tierra. Amén.",
+        "audio": "audio/espiritu-santo-es.mp3"
+    }
+    {
+        "titulo": "Salve",
+        "oracion": "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra. A ti llamamos los desterrados hijos de Eva. A ti suspiramos, gimiendo y llorando en este valle de lágrimas. Ea, pues, Señora abogada nuestra, vuelve a nosotros esos tus ojos misericordiosos. Y después de este destierro, muéstranos a Jesús, fruto bendito de tu vientre. ¡Oh clemente, oh piadosa, oh dulce Virgen María!, Amen.",
+        "audio": "audio/salve-es.mp3"
+    }
+     {
+        "titulo": "Magnificat",
+        "oracion": "Proclama mi alma la grandeza del Señor, se alegra mi espíritu en Dios mi Salvador, porque ha mirado la humildad de su sierva. Desde ahora me llamarán dichosa todas las generaciones, porque el Poderoso ha hecho obras grandes por mí: su nombre es Santo, y su misericordia llega a sus fieles de generación en generación. Él hace proezas con su brazo, dispersa a los soberbios de corazón, derriba del trono a los poderosos y enaltece a los humildes. A los hambrientos los colma de bienes y a los ricos los despide vacíos. Auxilia a Israel, su siervo, acordándose de su misericordia como lo había prometido a nuestros padres, a Abraham y a su descendencia para siempre.Amén.",
+        "audio": "audio/magnificat-es.mp3"
+    }
+    {
+        "titulo": "Gloria",
+        "oracion": "Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos.Amén.",
+        "audio": "audio/gloria-es.mp3"
+    }
+    {
+        "titulo": "De la Familia",
+        "oracion": "Señor, bendice a mi familia. Que reine en nuestro hogar el amor, la fe y la paz. Guíanos con tu luz y fortalece nuestros lazos con tu misericordia.Amén.",
+        "audio": "audio/familia-es.mp3"
     }
 ]
