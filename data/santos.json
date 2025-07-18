@@ -13,5 +13,70 @@
         "nombre": "Virgen de Guadalupe",
         "tipo": "Virgen",
         "descripcion": "Patrona de México y Emperatriz de las Américas. Su aparición en el cerro del Tepeyac es un símbolo de fe y esperanza para el pueblo mexicano."
+    },
+    {
+        "nombre": "Arcángel Rafael",
+        "tipo": "Ángel",
+        "descripcion": " El Arcángel Rafael es conocido como el ángel de la sanación y el protector de los viajeros. Su nombre significa Dios sana o Medicina de Dios"
+    },
+    {
+        "nombre": "Arcángel Gabriel",
+        "tipo": "Ángel",
+        "descripcion": "El Arcángel Gabriel es el mensajero celestial por excelencia. Su nombre significa Dios es mi fuerza"
+    },
+    {
+        "nombre": "Arcangel Uriel",
+        "tipo": "Ángel",
+        "descripcion": "El Arcángel Uriel es conocido como el Fuego de Dios o Luz Divina."
+    },
+    {
+        "nombre": "Arcangel Chamuel",
+        "tipo":"Ángel",
+        "descripcion": "Arcángel del amor, la compasión y la paz interior. Ayuda a sanar relaciones, encontrar objetos perdidos y cultivar el amor propio."
+    },
+    {
+        "nombre": "Arcangel Jofiel ",
+        "tipo":"Ángel",
+        "descripcion": "Guía de la sabiduría, la creatividad y el pensamiento positivo. Inspira la apreciación de la belleza en la vida y ayuda a despejar la mente."
+    },
+    {
+        "nombre": "Arcangel Zadquiel",
+        "tipo": "Ángel",
+        "descripcion": "Arcángel de la misericordia, el perdón y la transmutación. Ayuda a liberar el pasado y transformar el dolor en paz."
+    },
+    {
+        "nombre": "Santa Teresa de Avila",
+        "tipo":"Santo",
+        "descripcion": "La mística reformadora Monja carmelita y Doctora de la Iglesia, escribió sobre la vida interior y la unión con Dios."
+    },
+    {
+        "nombre": "San Juan Bosco",
+        "tipo":"Santo",
+        "descripcion": "Sacerdote italiano que dedicó su vida a educar y proteger a niños pobres. Fundó los Salesianos."
+    },
+    {
+     "nombre": "San Judas Tadeo",
+     "tipo": "Santo",
+     "descripcion": "El patrón de los casos imposibles, invocado en momentos de desesperación."
+    },
+    {
+        "nombre": "Virgen de Fatima",
+        "tipo":"Virgen",
+        "descripcion": "La profeta del cielo. Se manifestó en 1917 a tres pastorcitos en Portugal, revelando mensajes sobre la humanidad."
+    },
+    {
+        "nombre": "Virgen de Lourdes",
+        "tipo":"Virgen",
+        "descripcion": "La sanadora del alma. Apareció en 1858 a Bernadette Soubirous en Francia. Su fuente milagrosa atrae peregrinos de todo el mundo."
+    },
+    {
+        "nombre": "Virgen de la Caridad del Cobre",
+        "tipo": "Virgen",
+        "descripcion": "La patrona de Cuba. Conocida como “Cachita”, apareció flotando en el mar a tres esclavos. Es símbolo de libertad y esperanza."
+    },
+    {
+        "nombre": "Virgen de Czestochowa",
+        "tipo":"Virgen",
+        "descripcion": "La Virgen Negra de Polonia. Venerada como protectora nacional, su imagen oscura representa fortaleza en tiempos difíciles."
     }
 ]
