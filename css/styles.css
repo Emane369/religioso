@@ -50,3 +50,105 @@ audio {
     width: 100%;
     margin-top: 10px;
 }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+header {
+    background-color: #005a9c;
+    color: #fff;
+    padding: 1.5rem 0; /* Más espacio vertical */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    background-color: #004481; /* Un tono más oscuro */
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold; /* Enlaces más destacados */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px; /* Limitar el ancho para mejor lectura en pantallas grandes */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: static; /* Ya no fixed para permitir el scroll si el contenido es largo */
+    width: 100%;
+    margin-top: 20px; /* Espacio superior */
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.santo-imagen {
+    max-width: 150px; /* Tamaño máximo de las imágenes de santos */
+    height: auto;
+    float: left; /* Flotar a la izquierda del texto */
+    margin-right: 15px; /* Espacio a la derecha de la imagen */
+    margin-bottom: 10px; /* Espacio inferior */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+/* Estilos para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0;
+    }
+
+    nav a {
+        display: block; /* Los enlaces del menú se apilan verticalmente */
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .santo-imagen {
+        max-width: 100px;
+        float: none; /* No flotar en pantallas pequeñas */
+        margin: 0 auto 10px; /* Centrar la imagen */
+        display: block;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
