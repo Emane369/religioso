@@ -8,10 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 content += `
                 <div class="card">
                 ${item.imagen ? `<img src="${item.imagen}" alt="${item.nombre}" class="santo-imagen">` : ''}
-                <h3>${item.nombre} - ${item.tipo}</h3>
-                <p>${item.descripcion}</p>
-                </div>
-                `;
+                <div class="card-content">
+            <h3>${item.nombre} - ${item.tipo}</h3>
+            <p>${item.descripcion}</p>
+            </div>
+            </div>
+            `;
             });
             container.innerHTML = content;
         });

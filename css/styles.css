@@ -111,15 +111,30 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    /* --- NUEVAS REGLAS FLEXBOX --- */
+    display: flex;         /* Activa el modo Flexbox */
+    align-items: flex-start; /* Alinea los items verticalmente al inicio */
+    gap: 20px;             /* Añade un espacio de 20px entre la imagen y el texto */
 }
 
 .santo-imagen {
-    max-width: 150px; /* Tamaño máximo de las imágenes de santos */
+    max-width: 150px;
     height: auto;
-    float: left; /* Flotar a la izquierda del texto */
-    margin-right: 15px; /* Espacio a la derecha de la imagen */
-    margin-bottom: 10px; /* Espacio inferior */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px;
+    flex-shrink: 0; /* Evita que la imagen se encoja si no hay espacio */
+}
+
+/* --- NUEVA REGLA PARA EL CONTENEDOR DEL TEXTO --- */
+.card-content {
+    /* Este contenedor tomará el espacio restante */
+    flex-grow: 1; 
+}
+
+/* Hacemos que el H3 y P dentro del card-content no tengan margen superior */
+.card-content h3,
+.card-content p {
+    margin-top: 0;
 }
 
 audio {
