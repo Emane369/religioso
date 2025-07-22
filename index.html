@@ -24,6 +24,25 @@
             <p>Encuentra paz, inspiración y fortaleza para tu camino espiritual.</p>
         </div>
     </section>
+    </section>
+
+    <section id="santo-destacado" data-aos="fade-up">
+        <div class="container">
+            <h2>Santo Destacado</h2>
+            <div id="santo-destacado-content">
+                </div>
+        </div>
+    </section>
+    </section>
+
+    <section id="mision" data-aos="fade-up">
+        <div class="container">
+            <h2>Nuestra Misión</h2>
+            <p class="mision-texto">
+                Nuestra misión es ofrecer un refugio digital para el alma. En un mundo acelerado, buscamos ser un espacio de paz y reflexión donde puedas encontrar inspiración diaria, conectar con la historia de la fe y fortalecer tu espíritu a través de la oración. Este sitio es para ti.
+            </p>
+        </div>
+    </section>
     <section class="home-nav" data-aos="fade-up">
     <h2>Explora Nuestras Secciones</h2>
     <div class="nav-cards-container">
@@ -60,5 +79,37 @@
     once: true,     // La animación solo ocurre una vez
   });
 </script>
+<script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+      <script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('./data/santos.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Seleccionar un santo al azar
+                    const randomIndex = Math.floor(Math.random() * data.length);
+                    const santo = data[randomIndex];
+
+                    // Preparar el contenido HTML
+                    const container = document.getElementById('santo-destacado-content');
+                    if (santo && container) {
+                        container.innerHTML = `
+                            <div class="card">
+                                ${santo.imagen ? `<img src="${santo.imagen}" alt="${santo.nombre}" class="santo-imagen">` : ''}
+                                <div class="card-content">
+                                    <h3>${santo.nombre} - ${santo.tipo}</h3>
+                                    <p>${santo.descripcion}</p>
+                                </div>
+                            </div>
+                        `;
+                    }
+                });
+        });
+    </script>
 </body>
 </html>

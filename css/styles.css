@@ -255,3 +255,34 @@ audio {
     font-size: 2.5rem; /* Ícono (emoji) más grande */
     margin-top: 0;
 }
+/* styles.css */
+
+/* --- SANTO DESTACADO STYLES --- */
+#santo-destacado {
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Un fondo gris muy claro para diferenciarla */
+    text-align: center;
+}
+
+#santo-destacado .card {
+    /* Haremos que la tarjeta destacada sea diferente */
+    max-width: 800px;
+    margin: 0 auto; /* Centrar la tarjeta */
+    text-align: left; /* Alinear el texto de la tarjeta a la izquierda */
+}
+/* styles.css */
+
+/* --- MISIÓN SECTION STYLES --- */
+#mision {
+    padding: 50px 20px;
+    background-color: #005a9c; /* Usamos el color principal del header */
+    color: white;
+    text-align: center;
+}
+
+.mision-texto {
+    max-width: 800px; /* Limitamos el ancho del texto para que sea fácil de leer */
+    margin: 0 auto; /* Centramos el párrafo */
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
