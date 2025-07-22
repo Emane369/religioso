@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Religioso</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Mi Sitio Religioso - Inicio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -17,97 +17,108 @@
             <a href="oraciones.html">Oraciones</a>
         </nav>
     </header>
+
     <main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Tu Espacio de Fe y Reflexión</h1>
-            <p>Encuentra paz, inspiración y fortaleza para tu camino espiritual.</p>
-        </div>
-    </section>
-    </section>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tu Espacio de Fe y Reflexión</h1>
+                <p>Encuentra paz, inspiración y fortaleza para tu camino espiritual.</p>
+            </div>
+        </section>
 
-    <section id="santo-destacado" data-aos="fade-up">
-        <div class="container">
-            <h2>Santo Destacado</h2>
-            <div id="santo-destacado-content">
-                </div>
-        </div>
-    </section>
-    </section>
+        <section class="home-nav" data-aos="fade-up">
+            <h2>Explora Nuestras Secciones</h2>
+            <div class="nav-cards-container">
+                
+                <a href="santos.html" class="nav-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>🕊️</h3>
+                    <h4>Santos y Ángeles</h4>
+                    <p>Descubre la vida y obra de figuras celestiales.</p>
+                </a>
+                
+                <a href="proverbio.html" class="nav-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>📖</h3>
+                    <h4>Proverbio Diario</h4>
+                    <p>Una dosis diaria de sabiduría para reflexionar.</p>
+                </a>
+                
+                <a href="oraciones.html" class="nav-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>🙏</h3>
+                    <h4>Oraciones</h4>
+                    <p>Encuentra consuelo y conexión a través de la oración.</p>
+                </a>
 
-    <section id="mision" data-aos="fade-up">
-        <div class="container">
-            <h2>Nuestra Misión</h2>
-            <p class="mision-texto">
-                Nuestra misión es ofrecer un refugio digital para el alma. En un mundo acelerado, buscamos ser un espacio de paz y reflexión donde puedas encontrar inspiración diaria, conectar con la historia de la fe y fortalecer tu espíritu a través de la oración. Este sitio es para ti.
-            </p>
-        </div>
-    </section>
-    <section class="home-nav" data-aos="fade-up">
-    <h2>Explora Nuestras Secciones</h2>
-    <div class="nav-cards-container">
-        
-        <a href="santos.html" class="nav-card" data-aos="fade-up" data-aos-delay="100">
-            <h3>🕊️</h3>
-            <h4>Santos y Ángeles</h4>
-            <p>Descubre la vida y obra de figuras celestiales.</p>
-        </a>
-        
-        <a href="proverbio.html" class="nav-card" data-aos="fade-up" data-aos-delay="200">
-            <h3>📖</h3>
-            <h4>Proverbio Diario</h4>
-            <p>Una dosis diaria de sabiduría para reflexionar.</p>
-        </a>
-        
-        <a href="oraciones.html" class="nav-card" data-aos="fade-up" data-aos-delay="300">
-            <h3>🙏</h3>
-            <h4>Oraciones</h4>
-            <p>Encuentra consuelo y conexión a través de la oración.</p>
-        </a>
+            </div>
+        </section>
 
-    </div>
-</section>
+        <section id="santo-destacado" data-aos="fade-up">
+            <div class="container">
+                <h2>Santo Destacado</h2>
+                <div id="santo-destacado-content">
+                    </div>
+            </div>
+        </section>
 
+        <section id="mision" data-aos="fade-up">
+            <div class="container">
+                <h2>Nuestra Misión</h2>
+                <p class="mision-texto">
+                    Nuestra misión es ofrecer un refugio digital para el alma. En un mundo acelerado, buscamos ser un espacio de paz y reflexión donde puedas encontrar inspiración diaria, conectar con la historia de la fe y fortalecer tu espíritu a través de la oración. Este sitio es para ti.
+                </p>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Tu Sitio Religioso</p>
     </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // Duración de la animación en milisegundos
-    once: true,     // La animación solo ocurre una vez
-  });
-</script>
-<script>
+    
+    <script>
       AOS.init({
         duration: 1000,
         once: true,
       });
-            <script>
+    </script>
+    
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             fetch('./data/santos.json')
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
                 .then(data => {
-                    // Seleccionar un santo al azar
-                    const randomIndex = Math.floor(Math.random() * data.length);
-                    const santo = data[randomIndex];
-
-                    // Preparar el contenido HTML
-                    const container = document.getElementById('santo-destacado-content');
-                    if (santo && container) {
-                        container.innerHTML = `
-                            <div class="card">
-                                ${santo.imagen ? `<img src="${santo.imagen}" alt="${santo.nombre}" class="santo-imagen">` : ''}
-                                <div class="card-content">
-                                    <h3>${santo.nombre} - ${santo.tipo}</h3>
-                                    <p>${santo.descripcion}</p>
+                    if (data && data.length > 0) {
+                        const randomIndex = Math.floor(Math.random() * data.length);
+                        const santo = data[randomIndex];
+                        const container = document.getElementById('santo-destacado-content');
+                        
+                        if (santo && container) {
+                            container.innerHTML = `
+                                <div class="card">
+                                    ${santo.imagen ? `<img src="${santo.imagen}" alt="${santo.nombre}" class="santo-imagen">` : ''}
+                                    <div class="card-content">
+                                        <h3>${santo.nombre} - ${santo.tipo}</h3>
+                                        <p>${santo.descripcion}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        `;
+                            `;
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error al cargar el santo destacado:', error);
+                    const container = document.getElementById('santo-destacado-content');
+                    if(container) {
+                        container.innerHTML = '<p style="color:red;">No se pudo cargar el santo destacado en este momento.</p>';
                     }
                 });
         });
     </script>
+
 </body>
 </html>
