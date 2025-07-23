@@ -402,3 +402,23 @@ html {
     object-fit: cover; /* Asegura que la imagen se vea bien */
     margin-right: 15px;
 }
+/* --- CTA BUTTON STYLES --- */
+.cta-button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #005a9c; /* Color principal del sitio */
+    padding: 12px 25px;
+    margin-top: 20px; /* Espacio sobre el botón */
+    border-radius: 50px; /* Bordes completamente redondeados */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #004481; /* Color oscuro del nav */
+    color: #ffffff;
+    transform: translateY(-3px); /* Pequeño efecto al pasar el cursor */
+}
