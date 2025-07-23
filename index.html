@@ -118,12 +118,36 @@
                     }
                 });
         });
-    </script>
+        
+    <script>
+    const audio = document.getElementById('background-audio');
+    const playPauseBtn = document.getElementById('play-pause-btn');
 
-<audio id="background-audio" src="audio/ambiente.mp3" loop></audio>
-<div id="audio-controls">
-    <button id="play-pause-btn">🎵</button>
-</div>
+    playPauseBtn.addEventListener('click', () => {
+        if (audio.paused) {
+            // .play() devuelve una "Promesa" en JS moderno.
+            // Esto nos permite manejar el éxito o el fallo de la reproducción.
+            let playPromise = audio.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    // El audio comenzó a reproducirse sin problemas.
+                    playPauseBtn.innerHTML = '⏸️';
+                })
+                .catch(error => {
+                    // El navegador bloqueó la reproducción.
+                    console.error("El navegador bloqueó la reproducción:", error);
+                    playPauseBtn.innerHTML = '🎵';
+                    // Opcional: Puedes mostrar una alerta al usuario.
+                    // alert("Por favor, haz clic en cualquier parte de la página y luego intenta de nuevo.");
+                });
+            }
+        } else {
+            audio.pause();
+            playPauseBtn.innerHTML = '🎵';
+        }
+    });
+</script>
 
 </body>
 </html>
