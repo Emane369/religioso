@@ -286,3 +286,60 @@ audio {
     font-size: 1.1rem;
     line-height: 1.8;
 }
+/* styles.css */
+
+/* --- SMOOTH SCROLL BEHAVIOR --- */
+/* Esta simple regla hace que todos los saltos de ancla (links con #) sean suaves */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- SCROLL DOWN ARROW STYLES --- */
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 30px; /* Posición desde abajo */
+    left: 50%;
+    transform: translateX(-50%); /* Centrado horizontal perfecto */
+    font-size: 2.5rem; /* Tamaño de la flecha */
+    color: white;
+    text-decoration: none;
+    animation: bounce 2s infinite; /* Aplicamos la animación 'bounce' */
+}
+
+/* --- ANIMACIÓN DE REBOTE --- */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+/* styles.css */
+
+/* --- AUDIO CONTROLS STYLES --- */
+#audio-controls {
+    position: fixed; /* Fijo en la pantalla */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Para que esté por encima de todo */
+}
+
+#play-pause-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%; /* Botón circular */
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#play-pause-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
