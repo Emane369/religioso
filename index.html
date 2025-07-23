@@ -20,9 +20,10 @@
 
     <main>
         <section class="hero">
-            <div class="hero-content" <a href="#explorar" class="scroll-down-arrow">↓</a>>
+            <div class="hero-content">
                 <h1>Tu Espacio de Fe y Reflexión</h1>
                 <p>Encuentra paz, inspiración y fortaleza para tu camino espiritual.</p>
+                <a href="#explorar" class="scroll-down-arrow">↓</a>
             </div>
         </section>
 
@@ -73,6 +74,11 @@
         <p>&copy; 2025 Tu Sitio Religioso</p>
     </footer>
 
+    <audio id="background-audio" src="audio/ambiente.mp3" loop></audio>
+    <div id="audio-controls">
+        <button id="play-pause-btn">🎵</button>
+    </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
     <script>
@@ -86,9 +92,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             fetch('./data/santos.json')
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
+                    if (!response.ok) { throw new Error('Network response was not ok'); }
                     return response.json();
                 })
                 .then(data => {
@@ -110,44 +114,34 @@
                         }
                     }
                 })
-                .catch(error => {
-                    console.error('Error al cargar el santo destacado:', error);
-                    const container = document.getElementById('santo-destacado-content');
-                    if(container) {
-                        container.innerHTML = '<p style="color:red;">No se pudo cargar el santo destacado en este momento.</p>';
+                .catch(error => console.error('Error al cargar el santo destacado:', error));
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('background-audio');
+            const playPauseBtn = document.getElementById('play-pause-btn');
+
+            if (audio && playPauseBtn) {
+                playPauseBtn.addEventListener('click', () => {
+                    if (audio.paused) {
+                        let playPromise = audio.play();
+                        if (playPromise !== undefined) {
+                            playPromise.then(_ => {
+                                playPauseBtn.innerHTML = '⏸️';
+                            }).catch(error => {
+                                console.error("Error al intentar reproducir el audio:", error);
+                            });
+                        }
+                    } else {
+                        audio.pause();
+                        playPauseBtn.innerHTML = '🎵';
                     }
                 });
-        });
-
-    
-    const audio = document.getElementById('background-audio');
-    const playPauseBtn = document.getElementById('play-pause-btn');
-
-    playPauseBtn.addEventListener('click', () => {
-        if (audio.paused) {
-            // .play() devuelve una "Promesa" en JS moderno.
-            // Esto nos permite manejar el éxito o el fallo de la reproducción.
-            let playPromise = audio.play();
-
-            if (playPromise !== undefined) {
-                playPromise.then(_ => {
-                    // El audio comenzó a reproducirse sin problemas.
-                    playPauseBtn.innerHTML = '⏸️';
-                })
-                .catch(error => {
-                    // El navegador bloqueó la reproducción.
-                    console.error("El navegador bloqueó la reproducción:", error);
-                    playPauseBtn.innerHTML = '🎵';
-                    // Opcional: Puedes mostrar una alerta al usuario.
-                    // alert("Por favor, haz clic en cualquier parte de la página y luego intenta de nuevo.");
-                });
             }
-        } else {
-            audio.pause();
-            playPauseBtn.innerHTML = '🎵';
-        }
-    });
-</script>
+        });
+    </script>
 
 </body>
 </html>
