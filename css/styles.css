@@ -343,3 +343,62 @@ html {
 #play-pause-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+/* --- TESTIMONIOS SECTION STYLES --- */
+#testimonios {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.testimonios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.testimonio-card {
+    background-color: #f8f9fa;
+    border-left: 5px solid #005a9c; /* Un borde de acento con el color principal */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.testimonio-card blockquote {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Comillas decorativas */
+.testimonio-card blockquote::before {
+    content: '“';
+    font-size: 4rem;
+    color: #e0e0e0;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    z-index: 0;
+}
+
+.testimonio-card cite {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-style: normal;
+    color: #333;
+}
+
+.testimonio-card cite img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Imágenes redondas */
+    object-fit: cover; /* Asegura que la imagen se vea bien */
+    margin-right: 15px;
+}
