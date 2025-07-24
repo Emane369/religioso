@@ -422,3 +422,34 @@ html {
     color: #ffffff;
     transform: translateY(-3px); /* Pequeño efecto al pasar el cursor */
 }
+/* --- FILTROS DE CATEGORÍA STYLES --- */
+#filtros-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Para que los botones se ajusten en pantallas pequeñas */
+}
+
+.filtro-btn {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtro-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+/* Estilo para el botón que está activo/seleccionado */
+.filtro-btn.active {
+    background-color: #005a9c;
+    color: white;
+    border-color: #005a9c;
+}
