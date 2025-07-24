@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santos, Ángeles y Vírgenes</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -16,22 +17,31 @@
             <a href="oraciones.html">Oraciones</a>
         </nav>
     </header>
-    <main>
-    <div id="filtros-container" data-aos="fade-up">
-    <button class="filtro-btn active" data-filter="Todos">Todos</button>
-    <button class="filtro-btn" data-filter="Santo">Santos</button>
-    <button class="filtro-btn" data-filter="Ángel">Ángeles</button>
-    <button class="filtro-btn" data-filter="Virgen">Vírgenes</button>
-</div>
 
-<div id="info-container">
-    </div>
-        <div id="info-container"></div>
+    <main>
+        <div id="filtros-container" data-aos="fade-up">
+            <button class="filtro-btn active" data-filter="Todos">Todos</button>
+            <button class="filtro-btn" data-filter="Santo">Santos</button>
+            <button class="filtro-btn" data-filter="Ángel">Ángeles</button>
+            <button class="filtro-btn" data-filter="Virgen">Vírgenes</button>
+        </div>
+
+        <div id="info-container">
+            </div>
     </main>
-        
+
     <footer>
         <p>&copy; 2025 Tu Sitio Religioso</p>
     </footer>
+
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    
 </body>
 </html>
