@@ -6,7 +6,7 @@
     <title>Proverbio Diario</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="proverbio-page">
     <header>
         <h1>Proverbio del Día</h1>
         <nav>
@@ -16,14 +16,28 @@
             <a href="oraciones.html">Oraciones</a>
         </nav>
     </header>
+
     <main>
         <div id="proverbio-container">
-            <p id="proverbio-texto"></p>
+            <div id="proverbio-card">
+                <p id="proverbio-texto">Cargando proverbio...</p>
+            </div>
+
+            <div class="proverbio-actions">
+                <button id="generar-proverbio-btn">Mostrar Otro Proverbio</button>
+                <div class="share-buttons">
+                    <span>Compartir:</span>
+                    <a id="share-whatsapp" href="#" target="_blank" class="share-btn whatsapp">WhatsApp</a>
+                    <a id="share-twitter" href="#" target="_blank" class="share-btn twitter">Twitter</a>
+                </div>
+            </div>
         </div>
     </main>
+
     <footer>
         <p>&copy; 2025 Tu Sitio Religioso</p>
     </footer>
+
     <script src="js/proverbios.js"></script>
 </body>
 </html>
