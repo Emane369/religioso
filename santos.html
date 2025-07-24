@@ -26,14 +26,12 @@
             <button class="filtro-btn" data-filter="Virgen">Vírgenes</button>
         </div>
 
+        <div class="search-container" data-aos="fade-up">
+            <input type="text" id="search-bar" placeholder="Buscar por nombre...">
+        </div>
+
         <div id="info-container">
             </div>
-
-    <div class="search-container" data-aos="fade-up">
-        <input type="text" id="search-bar" placeholder="Buscar por nombre...">
-    </div>
-
-    <div id="info-container">
     </main>
 
     <footer>
@@ -49,5 +47,13 @@
       });
     </script>
     
+    <div id="modal-container" class="modal-oculto">
+        <div class="modal-contenido">
+            <button id="modal-cerrar-btn">&times;</button>
+            <div id="modal-cuerpo">
+                </div>
+        </div>
+    </div>
+
 </body>
 </html>

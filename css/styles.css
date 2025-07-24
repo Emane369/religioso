@@ -474,3 +474,83 @@ html {
     border-color: #005a9c;
     box-shadow: 0 0 10px rgba(0, 90, 156, 0.2);
 }
+/* --- ESTILOS PARA EL MODAL --- */
+
+/* Contenedor principal del modal (el fondo oscuro) */
+#modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Clases para mostrar u ocultar el modal */
+.modal-oculto {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* El contenido del modal (la caja blanca) */
+.modal-contenido {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+.modal-visible .modal-contenido {
+    transform: translateY(0);
+}
+
+/* Botón para cerrar el modal */
+#modal-cerrar-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Estilos para el contenido dentro del modal */
+#modal-cuerpo img {
+    max-width: 200px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+/* Botón "Leer más" en las tarjetas */
+.leer-mas-btn {
+    background-color: #005a9c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.leer-mas-btn:hover {
+    background-color: #004481;
+}
