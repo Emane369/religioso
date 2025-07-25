@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oraciones</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -16,12 +17,33 @@
             <a href="oraciones.html">Oraciones</a>
         </nav>
     </header>
+
     <main>
-        <div id="oraciones-container"></div>
+        <div id="filtros-container">
+            <button class="filtro-btn active" data-filter="Todos">Todas</button>
+            <button class="filtro-btn" data-filter="A Dios">A Dios</button>
+            <button class="filtro-btn" data-filter="A la Virgen">A la Virgen</button>
+            <button class="filtro-btn" data-filter="Petición">Petición</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar por título...">
+        </div>
+
+        <div id="oraciones-container">
+            </div>
     </main>
+
     <footer>
         <p>&copy; 2025 Tu Sitio Religioso</p>
     </footer>
+
     <script src="js/oraciones.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
 </body>
 </html>
