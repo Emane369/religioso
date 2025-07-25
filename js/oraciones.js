@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="oracion-card" data-index="${index}" data-aos="fade-up">
                     <div class="oracion-header">
                         <h4>${oracion.titulo}</h4>
-                        <span class="oracion-categoria">${oracion.categoria}</span>
+                        <span class="oracion-categoria">
                         <span class="oracion-toggle-icon">+</span>
                     </div>
                     <div class="oracion-cuerpo">
